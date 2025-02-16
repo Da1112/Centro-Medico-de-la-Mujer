@@ -1,9 +1,9 @@
 # Centro-Medico-de-la-Mujer
 ## Información Técnica
 El sitio web para el Centro Médico de la Mujer fue desarrollado utilizando las siguientes tecnologías:
-•	HTML: Para estructurar el contenido de las páginas.
-•	CSS: Para estilizar el diseño y hacerlo visualmente atractivo.
-•	PHP: Para manejar la lógica del servidor y las interacciones dinámicas, como formularios y chat.
+•-- 	HTML: Para estructurar el contenido de las páginas.
+•-- 	CSS: Para estilizar el diseño y hacerlo visualmente atractivo.
+•	-- PHP: Para manejar la lógica del servidor y las interacciones dinámicas, como formularios y chat.
 •	MySQL: Para almacenar y gestionar los datos, incluyendo las consultas del formulario y las interacciones del chat.
 . Detalles de Implementación
 1.	Menú de Navegación:
