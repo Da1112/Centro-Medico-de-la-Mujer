@@ -12,39 +12,36 @@ El sitio web fue desarrollado utilizando las siguientes tecnologías:
 
 -PHP: Para manejar la lógica del servidor y las interacciones dinámicas, como formularios y chat.
 
-
 -Tidio: Servicio externo utilizado para la funcionalidad de chat en tiempo real.
 
 #### Características e Implementación
 
-Menú de Navegación
+### Menú de Navegación
 
 Implementado con HTML y CSS para un diseño claro y responsivo.
 
-Botón "Agenda una consulta": Gestionado con PHP, redirige al formulario y almacena los datos en MySQL.
+-Botón "Agenda una consulta": Gestionado con PHP, redirige al formulario y almacena los datos en MySQL.
 
-Botón "Chatea con nosotros": Implementado con Tidio para permitir la interacción en tiempo real.
+-Botón "Chatea con nosotros": Implementado con Tidio para permitir la interacción en tiempo real.
 
-Sección "Nosotros"
+##### Sección "Nosotros"
 
-Contiene información estática estructurada con HTML y estilizada con CSS.
+-Contiene información estática estructurada con HTML y estilizada con CSS.
 
-Incluye un botón de chat en línea que permanece fijo en todas las páginas.
+-Incluye un botón de chat en línea que permanece fijo en todas las páginas.
 
-Sección "Servicios"
+##### Sección "Servicios"
 
-Presenta un listado de servicios utilizando HTML y CSS.
+-Presenta un listado de servicios utilizando HTML y CSS.
 
-Formulario de Contacto
+-Formulario de Contacto
 
-Desarrollado con HTML y PHP.
+-Desarrollado con HTML y PHP.
 
-Los datos ingresados se almacenan en una base de datos MySQL.
+-Implementa validación de campos y ofrece un enlace alternativo al chat en línea.
 
-Implementa validación de campos y ofrece un enlace alternativo al chat en línea.
+##### Footer
 
-Footer
+-Contiene enlaces a las secciones principales y detalles de contacto.
 
-Contiene enlaces a las secciones principales y detalles de contacto.
-
-Implementado con HTML y CSS para mantener la coherencia del diseño.
+-Implementado con HTML y CSS para mantener la coherencia del diseño.
