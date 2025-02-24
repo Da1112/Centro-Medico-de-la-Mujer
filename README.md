@@ -1,6 +1,6 @@
 # Centro Médico de la Mujer
 
-## Este repositorio contiene el código fuente del sitio web para el Centro Médico de la Mujer, desarrollado con el objetivo de proporcionar una plataforma informativa y funcional para los usuarios.
+## Centro Médico de la Mujer,es desarrollado con el objetivo de proporcionar una plataforma informativa y funcional para los usuarios.
 
 ### Tecnologías Utilizadas
 
