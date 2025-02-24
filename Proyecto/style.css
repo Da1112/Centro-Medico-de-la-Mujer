@@ -1,0 +1,709 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header{
+    background-color:#fafafa ;
+    padding: 150px 0 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.menu {
+    width: 100%;
+    background-color: #fafafa; 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li{
+    position:relative;
+    float: left;
+}
+.navbar ul li a{
+    font-size: 25px;
+    padding: 20px;
+    color: #003c64;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    color: #e471d9;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+    display: none;
+    cursor: pointer;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.texto-grande {
+    font-size: 1.5em;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.header-left {
+    width: 50%;
+}
+
+.header-left h1 {
+    font-size: 55px;
+    color: #003c64;
+    margin-bottom: 20px;
+}
+
+.header-left p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e471d9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.header-right {
+    width: 45%;
+}
+
+.header-right img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-left: 80px;
+}
+.about-img img{
+    width: 500px;
+    border-radius: 15px;
+}
+.about-text{
+    width: 50%;
+    margin-left: 50px;
+}
+.about-text h2{
+    color:#e471d9;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.about-text p{
+    font-size: 20px;
+    color: #003c64;
+}
+.servicios{
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background-color:#ffdbf4;
+}
+.servicios h2{
+    color:#003c64;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.servicios-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 55px;
+}
+.servicio-1 {
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.333% - 20px);
+    cursor: pointer;
+    text-align: center;
+}
+.servicio-1 i{
+    font-size: 30px;
+    color:#e471d9;
+    margin-bottom: 15px;
+}
+.servicio-1 h3{
+    font-size: 20px;
+    color: #003c64;
+    text-transform: capitalize;
+}
+
+/*formulario*/
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.formulario-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Separación entre el formulario y el mapa */
+    max-width: 1100px; /* Ajusta según el ancho máximo que desees */
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form h2{
+    font-size: 25px;
+    color: #003c64;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.input-container{
+    position: relative;
+}
+.input-container > i{
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #ffdbf4;
+    color: #003c64;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+.input-container > input,textarea{
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color:transparent;
+    border: 2px solid #ffdbf4;
+    font-size: 16px;
+    outline: none;
+    color: #003c64;
+}
+textarea{
+    height: 150px;
+}
+::placeholder{
+    color:#e471d9;
+    font-size: 16px;
+}
+.btn{
+    background-color: #e471d9;
+    padding: 17px 30px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.footer{
+    padding: 50px;
+    background-color: #ffdbf4;
+    justify-content: center;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    display: flex;
+    text-align: center;
+}
+.logo h3{
+    color:#003c64;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.link ul{
+    display: flex;
+    align-items: center;
+    
+}
+.link li{
+    margin-right: 80px;
+}
+.link ul li a{
+    color:#003c64;
+    font-size: 17px;
+}
+.link ul li a:hover{
+    color: #e471d9;
+}
+.contacto ul li{
+    color: #003c64;
+    
+}
+.contacto h5{
+    color: #003c64;
+    margin: 5px 0 5px 0 ;
+}
+#menu {
+    display: none;
+}
+
+/* responsiv para celualres */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none; 
+    }
+
+    .menu label {
+        display: block; 
+    }
+
+    .menu-icono {
+        display: block;
+    }
+    .menu .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #menu:checked + label + .navbar {
+        display: block;
+        position: absolute;
+        background-color: #fafafa;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        z-index: 999;
+    }
+    .accesibilidad-panel #readerBtn {
+        background-color: #e471d9;
+        padding: 17px 30px;
+        width: 100%;
+        border: 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .navbar ul {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        float: none;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+        font-size: 20px;
+        display: block;
+    }
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-left {
+        width: 100%;
+    }
+
+    .header-left h1 {
+        font-size: 32px;
+    }
+
+    .header-left p {
+        font-size: 16px;
+    }
+
+    .btn-1 {
+        padding: 10px 20px;
+    }
+
+    .header-right {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .header-right img {
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-top: 20px;
+        margin: 15px;
+    }
+
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .servicios-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio-1 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .formulario-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+    form, .mapa {
+        max-width: 100%;
+    }
+
+    .mapa iframe {
+        height: 250px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        flex-direction: row; 
+    }
+    
+    footer .link,
+    footer .contacto {
+        width: 50%; 
+        text-align: center;
+    }
+
+    .link ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .modo-oscuro .menu {
+        background-color: #2d2d2d; /* Fondo oscuro para el menú */
+    }
+
+    .modo-oscuro .menu-icono {
+        filter: invert(1); /* Invertir el color del ícono del menú para que sea visible en modo oscuro */
+    }
+
+    .modo-oscuro #menu:checked + label + .navbar {
+        background-color: #2d2d2d; /* Fondo oscuro para el menú desplegable */
+    }
+
+    .modo-oscuro .navbar ul li a {
+        color: white; /* Texto blanco en los enlaces del menú */
+    }
+
+    .modo-oscuro .navbar ul li a:hover {
+        color: #e471d9; /* Color rosa al pasar el cursor */
+    }
+}
+
+/* Estilos de pantallas grandes */
+@media screen and (min-width: 769px) {
+    .menu label {
+        display: none; 
+    }
+
+    .navbar {
+        display: flex; 
+    }
+}
+/* Botones con iconos */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em; /* Tamaño más grande */
+    color: #003c64;
+    transition: color 0.3s;
+    padding: 10px; /* Espaciado interno */
+}
+
+button:hover {
+    color: #e471d9; /* Rosa al pasar el cursor */
+}
+
+.modo-oscuro button {
+    color: #ffffff; /* Blanco en modo oscuro */
+}
+
+.modo-oscuro button:hover {
+    color: #e471d9; /* Rosa al pasar el cursor */
+}
+
+/* Modo oscuro */
+.modo-oscuro {
+    background-color: #1e1e1e; /* Fondo principal oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+.modo-oscuro .header {
+    background-color: #2d2d2d; /* Fondo del header más claro */
+}
+
+.modo-oscuro .menu {
+    background-color: #2d2d2d; /* Fondo del menú */
+}
+
+.modo-oscuro .navbar ul li a {
+    color: #ffffff; /* Texto blanco en los enlaces del menú */
+}
+
+.modo-oscuro .navbar ul li a:hover {
+    color: #e471d9; /* Rosa al pasar el cursor */
+}
+
+.modo-oscuro .header-left h1 {
+    color: #ffffff; /* Título en blanco */
+}
+
+.modo-oscuro .header-left p {
+    color: #cccccc; /* Texto gris claro */
+}
+
+.modo-oscuro .btn-1 {
+    background-color: #e471d9; /* Botón rosa */
+    color: #ffffff;
+}
+
+.modo-oscuro .about {
+    background-color: #2d2d2d; /* Fondo de la sección "Nosotros" */
+}
+
+.modo-oscuro .about-text h2 {
+    color: #e471d9; /* Título en rosa */
+}
+
+.modo-oscuro .about-text p {
+    color: #cccccc; /* Texto gris claro */
+}
+
+.modo-oscuro .servicios {
+    background-color: #2d2d2d; /* Fondo de la sección "Servicios" */
+}
+
+.modo-oscuro .servicios h2 {
+    color: #e471d9; /* Título en rosa */
+}
+
+.modo-oscuro .servicio-1 {
+    background-color: #3d3d3d; /* Fondo de las tarjetas de servicios */
+    color: #ffffff;
+}
+
+.modo-oscuro .servicio-1 h3 {
+    color: #e471d9; /* Título de las tarjetas en rosa */
+}
+
+.modo-oscuro .formulario {
+    background-color: #2d2d2d; /* Fondo del formulario */
+}
+
+.modo-oscuro form {
+    background-color: #3d3d3d; /* Fondo del formulario interno */
+    color: #ffffff;
+}
+
+.modo-oscuro .input-container > input,
+.modo-oscuro .input-container > textarea {
+    background-color: #3d3d3d; /* Fondo de los inputs */
+    color: #ffffff;
+    border: 2px solid #555; /* Borde más claro */
+}
+
+.modo-oscuro ::placeholder {
+    color: #bbb; /* Color del placeholder */
+}
+
+.modo-oscuro .footer {
+    background-color: #2d2d2d; /* Fondo del pie de página */
+}
+
+.modo-oscuro .footer h3,
+.modo-oscuro .link ul li a,
+.modo-oscuro .contacto ul li,
+.modo-oscuro .contacto h5 {
+    color: #ffffff; /* Texto blanco en el pie de página */
+}
+
+.modo-oscuro .link ul li a:hover {
+    color: #e471d9; /* Rosa al pasar el cursor */
+}
+/* Texto grande */
+.texto-grande {
+    font-size: 1.6em;
+}
+
+.texto-grande .header-left h1,
+.texto-grande .header-left p,
+.texto-grande .about-text h2,
+.texto-grande .about-text p,
+.texto-grande .servicios h2,
+.texto-grande .servicio-1 h3,
+.texto-grande .formulario h2,
+.texto-grande .footer h3,
+.texto-grande .link ul li a,
+.texto-grande .contacto ul li {
+    font-size: 1.6em;
+}
+
+/* Estilos para las imágenes de las especialidades */
+.info-especialidad {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fondo-translucido {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.info-especialidad img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.info-especialidad p {
+    font-size: 16px;
+    color: #003c64;
+    margin: 5px 0;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 500px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 645px;
+    border: 0;
+    border-radius: 10px;
+}
+/* Estilos para el registro de copyright y los iconos de redes sociales */
+.footer-registro {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc; /* Línea separadora */
+    color: #003c64; /* Color del texto */
+}
+
+.footer-registro p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: #003c64; /* Color de los iconos */
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #e471d9; /* Color al pasar el cursor */
+}
+
+/* Modo oscuro para el registro y los iconos */
+.modo-oscuro .footer-registro {
+    color: #ffffff; /* Texto blanco en modo oscuro */
+    border-top: 1px solid #555; /* Línea separadora en modo oscuro */
+}
+
+.modo-oscuro .footer-social a {
+    color: #ffffff; /* Iconos blancos en modo oscuro */
+}
+
+.modo-oscuro .footer-social a:hover {
+    color: #e471d9; /* Color al pasar el cursor en modo oscuro */
+}
